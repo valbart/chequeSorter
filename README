@@ -1,0 +1,9 @@
+Pour compiler : commande "make"
+
+Pour lancer le programme: ./hoffman <nombre d'emplacement du sorter> <emplacement du fichier instance>
+
+Par exemple si on veux lancer le programme avec un cheque sorter de 4 slots:
+./hoffman 2 data/n500.dat
+
+En sortie un fichier solution est généré qui contient la valeur de la solution (somme ni * hi)
+puis la hauteur de chacune des banques dans l'arbre (dans le même ordre que donné dans le fichier d'instance)
