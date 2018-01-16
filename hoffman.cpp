@@ -20,7 +20,6 @@ int main(int argc, char * argv[]) {
     if (rest == 0) nbDummy = 1;
     else if (rest > 1) nbDummy = s - rest;
   }
-  std::cout << "NB dummy = "  << nbDummy << std::endl;
   nbBank += nbDummy;
 
   // Initializing vector for TreeBuilder
