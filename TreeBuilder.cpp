@@ -3,7 +3,7 @@
 #include <algorithm>
 
 bool nodeComparator(Node* n1, Node* n2) {
-  return n1->getWeigth() > n2 ->getWeigth();
+  return n1->getWeigth() >= n2 ->getWeigth();
 }
 
 TreeBuilder::TreeBuilder(int nbSpot, int nbBank, std::vector<int> bankWeigth) {
@@ -33,7 +33,7 @@ void TreeBuilder::recursivePrint() {
 }
 
 Node* TreeBuilder::buildNode() {
-  if (remainingNodes < s) return NULL;
+  if (remainingNodes <= s) return NULL;
   Node* newNode = new Node(0, false, -1);
   for (unsigned int i = remainingNodes-1; i >= remainingNodes - s; i --) {
     (*newNode).addSon(nodes[i]);
